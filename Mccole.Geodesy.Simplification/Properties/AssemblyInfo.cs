@@ -15,8 +15,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Library of polyline simplification algorithms based on the work of Elmar de Koning.")]
 [assembly: ComVisible(false)]
 [assembly: Guid("e61b0e76-763c-4c9e-876e-0dd630f01695")]
-[assembly: AssemblyVersion("1.0.18204.6")]
-[assembly: AssemblyFileVersion("1.0.18204.6")]
+[assembly: AssemblyVersion("1.0.18204.7")]
+[assembly: AssemblyFileVersion("1.0.18204.7")]
 /*
  * The polyline simplification work is based on the articles by Elmar de Koning.
  * It is not a transcription of his work in the C language, it's an implementation of his documentation.
