@@ -1,1 +1,1 @@
-# DevStreet.Geodesy.Simplification
+# Mccole.Geodesy.Simplification
