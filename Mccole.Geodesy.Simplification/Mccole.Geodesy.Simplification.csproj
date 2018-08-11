@@ -28,7 +28,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <CodeAnalysisRuleSet>C:\Development\VisualStudio\VisualStudio\Rules\Used_Rules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\Rules\Used_Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mccole.Geodesy">
-      <HintPath>..\..\..\_References\$(Configuration)\Mccole.Geodesy.dll</HintPath>
+      <HintPath>..\References\$(Configuration)\Mccole.Geodesy.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -74,12 +74,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>C:\Development\_References\OnBuild.exe "$(ProjectDir)Properties\AssemblyInfo.cs" /CS</PreBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>XCOPY "$(TargetDir)*.dll" "C:\Development\_References\$(ConfigurationName)\" /R /Y /C
-XCOPY "$(TargetDir)*.pdb" "C:\Development\_References\$(ConfigurationName)\" /R /Y /C
-XCOPY "$(TargetDir)*.xml" "C:\Development\_References\$(ConfigurationName)\" /R /Y /C</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
